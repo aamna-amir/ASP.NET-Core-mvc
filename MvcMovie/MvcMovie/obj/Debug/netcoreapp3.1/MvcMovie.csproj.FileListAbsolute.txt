@@ -35,3 +35,4 @@ E:\ASP.NET\Practice\ASP.NET-Core-mvc\MvcMovie\MvcMovie\obj\Debug\netcoreapp3.1\M
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\MvcMovie\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.pdb
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\MvcMovie\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.genruntimeconfig.cache
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\MvcMovie\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.csproj.CopyComplete
+E:\ASP.NET\Practice\ASP.NET-Core-mvc\MvcMovie\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\test\Index.cshtml.g.cs
