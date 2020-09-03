@@ -2,10 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MvcMovie.Data;
 
 namespace MvcMovie.Models
 {
     public class SeedData
     {
+        public static void Initialize(IServiceProvider serviceProvider)
+        {
+            using (var context = new MvcMovieContext(
+                serviceProvider.GetRequiredService<
+                    DbContextOptions<MvcMovieContext>>()))
+            {
+                // Look for any movies.
+                if (context.Movie.Any())
+                {
+                    return;   // DB has been seeded
+                }
+                context.AddAsync(new Movie
+                {
+                    Title = "When Harry Met Sally",
+                    ReleaseDate = DateTime.Parse("1989-2-12"),
+                    Genre = "Romantic Comedy",
+                    Price = 7.99M
+                });
+
+                
+                context.SaveChanges();
+            }
+        }
     }
 }
