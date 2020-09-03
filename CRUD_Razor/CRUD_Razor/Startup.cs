@@ -24,6 +24,8 @@ namespace CRUD_Razor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            IServiceCollection serviceCollections = services.AddDbContext<ApplicationDbcontext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,5 +54,9 @@ namespace CRUD_Razor
                 endpoints.MapRazorPages();
             });
         }
+    }
+
+    internal class ApplicationDbcontext
+    {
     }
 }
