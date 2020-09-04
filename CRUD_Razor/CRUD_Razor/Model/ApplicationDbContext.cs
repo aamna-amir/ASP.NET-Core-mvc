@@ -12,5 +12,7 @@ namespace CRUD_Razor.Model
         {
             
         }
+
+        public DbSet<Book> Books { get; set; }
     }
 }

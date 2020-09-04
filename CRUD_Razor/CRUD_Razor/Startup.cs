@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 namespace CRUD_Razor
 {
@@ -25,7 +26,10 @@ namespace CRUD_Razor
         {
             services.AddRazorPages();
 
-            IServiceCollection serviceCollections = services.AddDbContext<ApplicationDbcontext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections")));
+            services.AddDbContext<ApplicationDbcontext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
