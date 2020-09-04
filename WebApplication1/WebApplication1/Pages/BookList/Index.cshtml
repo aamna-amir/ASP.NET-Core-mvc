@@ -2,3 +2,16 @@
 @model WebApplication1.Pages.BookList.IndexModel
 @{
 }
+<br />
+<h2>Book List</h2>
+<br />
+<a asp-page="create" class="btn btn-primary">Create New Book</a>
+
+@if (Model.Books.Count()> 0)
+{
+    <div>Books are available!</div>
+}
+else
+{
+    <div>No Books</div>
+} 

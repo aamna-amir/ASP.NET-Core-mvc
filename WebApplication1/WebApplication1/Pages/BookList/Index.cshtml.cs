@@ -17,9 +17,9 @@ namespace WebApplication1.Pages.BookList
         {
             _db = db;
         }
-        public async void OnGet()
+        public async Task OnGet()
         {
-            var books = await _db.Books.ToListAsync();
+            Books = await _db.Books.ToListAsync();
         }
     }
 }
