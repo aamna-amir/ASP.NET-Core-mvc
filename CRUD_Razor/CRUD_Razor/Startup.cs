@@ -26,10 +26,14 @@ namespace CRUD_Razor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
             services.AddDbContext<ApplicationDbContext>(options =>
-            
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections"))
-            );
+options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Crud_Razor;Trusted_Connection=True;MultipleActiveResultSets=true"));
+
+            //services.AddDbContext<ApplicationDbContext>(options =>
+
+            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections"))
+            //);
 
             //services.AddDbContext<ApplicationDbcontext>(options =>
             //{
