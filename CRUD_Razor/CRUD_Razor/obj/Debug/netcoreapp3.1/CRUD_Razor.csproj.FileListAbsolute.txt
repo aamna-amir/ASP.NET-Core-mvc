@@ -75,3 +75,4 @@ E:\ASP.NET\Practice\ASP.NET-Core-mvc\CRUD_Razor\CRUD_Razor\obj\Debug\netcoreapp3
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\CRUD_Razor\CRUD_Razor\obj\Debug\netcoreapp3.1\CRUD_Razor.dll
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\CRUD_Razor\CRUD_Razor\obj\Debug\netcoreapp3.1\CRUD_Razor.pdb
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\CRUD_Razor\CRUD_Razor\obj\Debug\netcoreapp3.1\CRUD_Razor.genruntimeconfig.cache
+E:\ASP.NET\Practice\ASP.NET-Core-mvc\CRUD_Razor\CRUD_Razor\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Index.cshtml.g.cs
