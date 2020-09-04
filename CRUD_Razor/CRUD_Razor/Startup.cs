@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using CRUD_Razor.Model;
 
 namespace CRUD_Razor
 {
@@ -25,11 +26,15 @@ namespace CRUD_Razor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddDbContext<ApplicationDbContext>(options =>
+            
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections"))
+            );
 
-            services.AddDbContext<ApplicationDbcontext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections"));
-            });
+            //services.AddDbContext<ApplicationDbcontext>(options =>
+            //{
+            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections"));
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
