@@ -760,3 +760,4 @@ E:\ASP.NET\Practice\ASP.NET-Core-mvc\WebApplication1\WebApplication1\obj\Debug\n
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
 E:\ASP.NET\Practice\ASP.NET-Core-mvc\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Create.cshtml.g.cs
+E:\ASP.NET\Practice\ASP.NET-Core-mvc\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Edit.cshtml.g.cs
